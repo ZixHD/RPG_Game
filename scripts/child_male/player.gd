@@ -38,7 +38,7 @@ func _process(delta: float) -> void:
 func movement(delta:float) -> void:
 	input.x = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 	input.y = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
-	
+
 	if(Input.is_action_pressed("left")):
 		player_state = state.WALK_LEFT
 	if Input.is_action_pressed("right"):

@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://ujeioffxge1g" path="res://scripts/child_male/player.gd" id="1_sai44"]
 [ext_resource type="Texture2D" uid="uid://cbdfa783dfw4s" path="res://scenes/child_male/kid male anims.png" id="2_sai44"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lyk0q"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_3n6ls"]
+radius = 9.0
 
 [sub_resource type="Animation" id="Animation_3n6ls"]
 length = 1.02
@@ -162,7 +163,8 @@ _data = {
 &"walk back": SubResource("Animation_lrbwd")
 }
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_layer = 2
 script = ExtResource("1_sai44")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -189,7 +191,9 @@ metadata/_aseprite_wizard_config_ = {
 metadata/_aseprite_wizard_source_file_hash_ = "988fa646bcf758482cad05c2ddef2b5f"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_lyk0q")
+light_mask = 2
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_3n6ls")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

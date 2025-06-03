@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwlre6vfkbu6y"]
+
+[ext_resource type="Script" uid="uid://c6bbnxun75ni2" path="res://bed.gd" id="1_2rykw"]
+[ext_resource type="Texture2D" uid="uid://bt14qvnewga5p" path="res://assets/room child/furnitures/krevet1.png" id="1_c32mu"]
+[ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://utils/interaction/interaction_area/interaction_area.tscn" id="2_2rykw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c32mu"]
+size = Vector2(29, 45)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gtpq8"]
+size = Vector2(39, 51)
+
+[node name="Bed" type="StaticBody2D"]
+script = ExtResource("1_2rykw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_c32mu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_c32mu")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_2rykw")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("RectangleShape2D_gtpq8")
