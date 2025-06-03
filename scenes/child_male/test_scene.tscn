@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://bdon2p01tvmm1"]
 
-[ext_resource type="Texture2D" uid="uid://c4m1ptcl41cji" path="res://assets/room child/SobaDecija1.png" id="1_oym8e"]
+[ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://assets/room child/SobaDecija2.png" id="1_oym8e"]
 [ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://scenes/child_male/player.tscn" id="1_vajy1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iun4r"]
