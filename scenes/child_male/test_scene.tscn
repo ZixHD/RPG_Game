@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=4 uid="uid://bdon2p01tvmm1"]
+[gd_scene load_steps=9 format=4 uid="uid://bdon2p01tvmm1"]
 
 [ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://scenes/child_male/player.tscn" id="1_vajy1"]
 [ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://assets/room child/SobaDecija2.png" id="2_iun4r"]
 [ext_resource type="PackedScene" uid="uid://udlcvuvb4ve1" path="res://window.tscn" id="4_joq8n"]
 [ext_resource type="PackedScene" uid="uid://cwlre6vfkbu6y" path="res://bed.tscn" id="4_s18dl"]
+[ext_resource type="PackedScene" uid="uid://bo7dl4wm5i48b" path="res://lamp.tscn" id="5_s18dl"]
+[ext_resource type="PackedScene" uid="uid://bwi1ux40ga505" path="res://desk.tscn" id="6_wyer0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joq8n"]
 texture = ExtResource("2_iun4r")
@@ -340,6 +342,7 @@ tile_map_data = PackedByteArray("AAD3//n/AQAAAAEAAAD3//r/AQAAAAIAAAD3//v/AQAAAAM
 tile_set = SubResource("TileSet_joq8n")
 
 [node name="Player" parent="." instance=ExtResource("1_vajy1")]
+z_index = 20
 position = Vector2(571, 353)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -353,3 +356,9 @@ position = Vector2(648, 244)
 
 [node name="Bed" parent="." instance=ExtResource("4_s18dl")]
 position = Vector2(443, 306)
+
+[node name="Desk" parent="." instance=ExtResource("6_wyer0")]
+position = Vector2(506, 290)
+
+[node name="Lamp" parent="." instance=ExtResource("5_s18dl")]
+position = Vector2(506, 276)

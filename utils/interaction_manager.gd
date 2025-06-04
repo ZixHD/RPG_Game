@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var player = get_tree().get_first_node_in_group("player")
+@onready var player = get_tree().get_first_node_in_group("Player")
 
 
 var active_areas = []
@@ -18,7 +18,6 @@ func unregister_area(area: InteractionArea):
 func _process(delta: float) -> void:
 	if(active_areas.size() > 0 && can_interact):
 		active_areas.sort_custom(_sort_by_distance_to_player)
-		print("interaction////")
 	else:
 		pass
 	
