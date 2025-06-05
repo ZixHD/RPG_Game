@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cbdfa783dfw4s" path="res://scenes/child_male/kid male anims.png" id="2_sai44"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3n6ls"]
-radius = 9.0
+radius = 13.0
 
 [sub_resource type="Animation" id="Animation_3n6ls"]
 length = 1.02
@@ -164,11 +164,13 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
+scale = Vector2(1.5, 1.5)
 collision_layer = 2
 script = ExtResource("1_sai44")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_sai44")
 hframes = 7
 vframes = 6
@@ -192,7 +194,7 @@ metadata/_aseprite_wizard_source_file_hash_ = "988fa646bcf758482cad05c2ddef2b5f"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2
-position = Vector2(0, -3)
+position = Vector2(0, -7)
 shape = SubResource("CircleShape2D_3n6ls")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

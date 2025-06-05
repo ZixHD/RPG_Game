@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var animation: AnimationPlayer = $AnimationPlayer
 
 
-@export var speed: float = 80.0
+@export var speed: float = 150.0
 enum state {IDLE_RIGHT, IDLE_LEFT, IDLE_UP, IDLE_DOWN, WALK_RIGHT, WALK_LEFT, WALK_UP, WALK_DOWN}
 var player_state = state.IDLE_RIGHT
 var input:Vector2 = Vector2.ZERO

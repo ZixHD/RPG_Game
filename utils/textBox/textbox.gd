@@ -7,7 +7,6 @@ extends CanvasLayer
 @onready var label = $TextboxContainer/MarginContainer/HBoxContainer/Label
 
 
-
 const CHAR_READ_RATE = 0.05
 
 enum State{
@@ -23,25 +22,18 @@ signal dialog_started
 signal dialog_finished
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
 	hide_textbox()
-	queue_text("Sad cu da mu nalupam samare")
-	queue_text("Second text")
-	queue_text("Third text")
-	queue_text("Fourth text")
+	current_state = State.READY
 	
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _update_state():
 	match current_state:
 		State.READY:
 			if !text_queue.is_empty():
 				display_text()
 			pass
 		State.READING:
-			print("READING")
-			emit_signal("dialog_started")
-			if Input.is_action_just_pressed("roll"):
+			if Input.is_action_just_pressed("interact"):
 				label.visible_characters = len(label.text)
 				if active_tween != null:
 					active_tween.stop() 
@@ -49,17 +41,21 @@ func _process(delta):
 				change_state(State.FINISHED)
 			pass
 		State.FINISHED:
-			print("FIN")
-			if Input.is_action_just_pressed("roll"):
+			if Input.is_action_just_pressed("interact"):
 				change_state(State.READY)
 				hide_textbox()
 				if(text_queue.is_empty()):
 					emit_signal("dialog_finished")
 			pass	
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	_update_state()
 
 
 func queue_text(new_text):
-	text_queue.push_back(new_text)
+	if(current_state != State.FINISHED):
+		text_queue.push_back(new_text)
+		
 	
 func hide_textbox():
 	start_symbol.text = ""

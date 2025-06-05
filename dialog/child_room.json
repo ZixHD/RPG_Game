@@ -1,0 +1,17 @@
+{
+	"window": [
+		"It's a beatiful day outside"
+	],
+	
+	"bed":[
+		"It's too early go to sleep",
+	],
+	
+	"lamp":[
+		"Turn it on ?"
+	],
+	
+	"desk":[
+		"The desk is a little bit wobbly"
+	],
+}

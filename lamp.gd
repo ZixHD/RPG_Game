@@ -6,4 +6,7 @@ func _ready() -> void:
 	interaction_area.interact = Callable(self, "_on_interact")
 	
 func _on_interact():
-	print("lampa")
+	var text: String = DialogManager.get_message("lamp");
+	print(text)
+	Textbox.queue_text(text)
+	

@@ -11,12 +11,23 @@ config_version=5
 [application]
 
 config/name="PRG_Gamge"
+run/main_scene="uid://bdon2p01tvmm1"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
 [autoload]
 
 InteractionManager="*res://utils/interaction/interaction_manager/InteractionManager.tscn"
+DialogManager="*res://utils/dialog/DialogManager.gd"
+SceneManager="*res://utils/scene/SceneManager.gd"
+Textbox="*res://utils/textBox/textbox.tscn"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
 
 [editor_plugins]
 

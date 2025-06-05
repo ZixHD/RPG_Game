@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ln0u1gs5g330"]
 
-[ext_resource type="Script" uid="uid://dnkn6lioa1ckg" path="res://utils/interaction_area.gd" id="1_ll3hc"]
+[ext_resource type="Script" uid="uid://dnkn6lioa1ckg" path="res://utils/interaction/interaction_area/interaction_area.gd" id="1_ll3hc"]
 
 [node name="InteractionArea" type="Area2D"]
 collision_layer = 0

@@ -5,23 +5,26 @@
 [ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://utils/interaction/interaction_area/interaction_area.tscn" id="2_2rykw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c32mu"]
-size = Vector2(29, 45)
+size = Vector2(42, 67)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gtpq8"]
-size = Vector2(39, 51)
+size = Vector2(60.6667, 83.3333)
 
 [node name="Bed" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_2rykw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_c32mu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -0.5)
+position = Vector2(1, -0.5)
 shape = SubResource("RectangleShape2D_c32mu")
 
 [node name="InteractionArea" parent="." instance=ExtResource("2_2rykw")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(1.66667, 3)
 shape = SubResource("RectangleShape2D_gtpq8")
