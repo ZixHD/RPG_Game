@@ -24,13 +24,13 @@ signal dialog_finished
 func _ready():
 	hide_textbox()
 	current_state = State.READY
-	
 
 func _update_state():
 	match current_state:
 		State.READY:
 			if !text_queue.is_empty():
 				display_text()
+				emit_signal("dialog_started")
 			pass
 		State.READING:
 			if Input.is_action_just_pressed("interact"):

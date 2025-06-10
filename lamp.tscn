@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bo7dl4wm5i48b"]
 
-[ext_resource type="Texture2D" uid="uid://28wwuxgmq2yu" path="res://assets/room child/furnitures/lampa1.png" id="1_uno5e"]
+[ext_resource type="Texture2D" uid="uid://28wwuxgmq2yu" path="res://assets/room_child/furnitures/lampa1.png" id="1_uno5e"]
 [ext_resource type="Script" uid="uid://cklgqcoj8rj60" path="res://lamp.gd" id="1_vxcd3"]
 [ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://utils/interaction/interaction_area/interaction_area.tscn" id="2_vxcd3"]
 

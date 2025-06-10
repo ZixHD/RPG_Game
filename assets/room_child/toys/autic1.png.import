@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4m1ptcl41cji"
-path="res://.godot/imported/SobaDecija1.png-1a78e98558db586650c6b0c80a8ff089.ctex"
+uid="uid://cxir0kst8vk63"
+path="res://.godot/imported/autic1.png-a5719daaefbed1226e6d4c0e33a688af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/room child/SobaDecija1.png"
-dest_files=["res://.godot/imported/SobaDecija1.png-1a78e98558db586650c6b0c80a8ff089.ctex"]
+source_file="res://assets/room_child/toys/autic1.png"
+dest_files=["res://.godot/imported/autic1.png-a5719daaefbed1226e6d4c0e33a688af.ctex"]
 
 [params]
 

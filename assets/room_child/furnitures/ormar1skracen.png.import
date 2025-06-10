@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://28wwuxgmq2yu"
-path="res://.godot/imported/lampa1.png-a74674b393a7831547e0005022065e30.ctex"
+uid="uid://b860xv0kq0ojh"
+path="res://.godot/imported/ormar1skracen.png-81d007022e20a4f926e1a1bbfc421d17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/room child/furnitures/lampa1.png"
-dest_files=["res://.godot/imported/lampa1.png-a74674b393a7831547e0005022065e30.ctex"]
+source_file="res://assets/room_child/furnitures/ormar1skracen.png"
+dest_files=["res://.godot/imported/ormar1skracen.png-81d007022e20a4f926e1a1bbfc421d17.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cwlre6vfkbu6y"]
 
 [ext_resource type="Script" uid="uid://c6bbnxun75ni2" path="res://bed.gd" id="1_2rykw"]
-[ext_resource type="Texture2D" uid="uid://bt14qvnewga5p" path="res://assets/room child/furnitures/krevet1.png" id="1_c32mu"]
+[ext_resource type="Texture2D" uid="uid://bt14qvnewga5p" path="res://assets/room_child/furnitures/krevet1.png" id="1_c32mu"]
 [ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://utils/interaction/interaction_area/interaction_area.tscn" id="2_2rykw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c32mu"]

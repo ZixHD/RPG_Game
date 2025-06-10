@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt14qvnewga5p"
-path="res://.godot/imported/krevet1.png-21f269716847d79f1143cc4bbe06d58e.ctex"
+uid="uid://dbed4l863rymf"
+path="res://.godot/imported/medved1.png-0366d2d04af4a20eadf22f0a13f58085.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/room child/furnitures/krevet1.png"
-dest_files=["res://.godot/imported/krevet1.png-21f269716847d79f1143cc4bbe06d58e.ctex"]
+source_file="res://assets/room_child/toys/medved1.png"
+dest_files=["res://.godot/imported/medved1.png-0366d2d04af4a20eadf22f0a13f58085.ctex"]
 
 [params]
 

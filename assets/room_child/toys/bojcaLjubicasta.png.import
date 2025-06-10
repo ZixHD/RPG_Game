@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhqbis8kph78a"
-path="res://.godot/imported/stolcic1.png-6b37ccdd2bf1e3d006e05736b6207def.ctex"
+uid="uid://bt0ohkn05fn8c"
+path="res://.godot/imported/bojcaLjubicasta.png-0f47ed0f41c174d25007671fb590b11e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/room child/furnitures/stolcic1.png"
-dest_files=["res://.godot/imported/stolcic1.png-6b37ccdd2bf1e3d006e05736b6207def.ctex"]
+source_file="res://assets/room_child/toys/bojcaLjubicasta.png"
+dest_files=["res://.godot/imported/bojcaLjubicasta.png-0f47ed0f41c174d25007671fb590b11e.ctex"]
 
 [params]
 

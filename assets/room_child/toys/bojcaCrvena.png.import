@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7xt54guw3g2d"
-path="res://.godot/imported/SobaDecija2.png-980107cfe8735769b7bee21b3f4fdec1.ctex"
+uid="uid://c5yx118kgsy5y"
+path="res://.godot/imported/bojcaCrvena.png-e7af8f7c2f249d8146dd8c1e1fbb1e90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/room child/SobaDecija2.png"
-dest_files=["res://.godot/imported/SobaDecija2.png-980107cfe8735769b7bee21b3f4fdec1.ctex"]
+source_file="res://assets/room_child/toys/bojcaCrvena.png"
+dest_files=["res://.godot/imported/bojcaCrvena.png-e7af8f7c2f249d8146dd8c1e1fbb1e90.ctex"]
 
 [params]
 
