@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://3fbwtjggk65a" path="res://assets/room_child/toys/bojcaZuta.png" id="1_ojrwg"]
 
 [node name="YellowPencil" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ojrwg")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://bdon2p01tvmm1"]
+[gd_scene load_steps=23 format=4 uid="uid://bdon2p01tvmm1"]
 
 [ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://scenes/child_male/player.tscn" id="1_vajy1"]
 [ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://assets/room_child/SobaDecija2.png" id="2_iun4r"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://coshexf7y828c" path="res://cupboard_shelfs.tscn" id="8_t1fpc"]
 [ext_resource type="PackedScene" uid="uid://1fy13wl18xkr" path="res://cupboard_clothes.tscn" id="9_t1fpc"]
 [ext_resource type="PackedScene" uid="uid://71ee8lks0u3t" path="res://car.tscn" id="10_dmxy6"]
+[ext_resource type="PackedScene" uid="uid://18pta1fi3uc7" path="res://trash_can.tscn" id="10_ltvg2"]
+[ext_resource type="PackedScene" uid="uid://dyeu3pdvj0crk" path="res://toy_chest.tscn" id="11_138r6"]
 [ext_resource type="PackedScene" uid="uid://bcwy6jkhej4jd" path="res://red_pencil.tscn" id="11_haob2"]
 [ext_resource type="PackedScene" uid="uid://dpjyan68v73uf" path="res://purple_pencil.tscn" id="12_eikv1"]
 [ext_resource type="PackedScene" uid="uid://bodhf1l2sekto" path="res://blue_pencil.tscn" id="13_7gaoq"]
@@ -124,23 +126,41 @@ texture = ExtResource("2_iun4r")
 0:4/0 = 0
 0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:4/0 = 0
+11:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 16:4/0 = 0
+16:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 17:4/0 = 0
+17:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 18:4/0 = 0
+18:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 19:4/0 = 0
 19:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:5/0 = 0
@@ -346,7 +366,7 @@ texture = ExtResource("2_iun4r")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_joq8n")
 
-[node name="Node" type="Node"]
+[node name="ChildRoom" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(299, 248)
@@ -381,36 +401,42 @@ position = Vector2(151, 159)
 position = Vector2(349, 298)
 
 [node name="CupboardShelfs" parent="Furniture" instance=ExtResource("8_t1fpc")]
-position = Vector2(300, 116)
+position = Vector2(300, 113)
 
 [node name="CupboardClothes" parent="Furniture" instance=ExtResource("9_t1fpc")]
 position = Vector2(567, 242)
 
+[node name="TrashCan" parent="Furniture" instance=ExtResource("10_ltvg2")]
+position = Vector2(602, 420)
+
+[node name="ToyChest" parent="Furniture" instance=ExtResource("11_138r6")]
+position = Vector2(388, 162)
+
 [node name="Toys" type="Node" parent="."]
 
 [node name="Car" parent="Toys" instance=ExtResource("10_dmxy6")]
-position = Vector2(395, 264)
+position = Vector2(145, 386)
 
 [node name="RedPencil" parent="Toys" instance=ExtResource("11_haob2")]
-position = Vector2(439, 249)
+position = Vector2(273, 303)
 
 [node name="PurplePencil" parent="Toys" instance=ExtResource("12_eikv1")]
-position = Vector2(435, 292)
+position = Vector2(291, 281)
 
 [node name="BluePencil" parent="Toys" instance=ExtResource("13_7gaoq")]
 position = Vector2(290, 334)
 
 [node name="GreenPencil" parent="Toys" instance=ExtResource("14_ltvg2")]
-position = Vector2(252, 291)
+position = Vector2(343, 296)
 
 [node name="YellowPencil" parent="Toys" instance=ExtResource("15_138r6")]
-position = Vector2(341, 334)
+position = Vector2(343, 325)
 
 [node name="Drawing" parent="Toys" instance=ExtResource("16_100eh")]
-position = Vector2(265, 256)
+position = Vector2(315, 319)
 
 [node name="ActionFigure" parent="Toys" instance=ExtResource("17_43keb")]
-position = Vector2(412, 325)
+position = Vector2(95, 422)
 
 [node name="TeddyBear" parent="Toys" instance=ExtResource("18_buv2r")]
-position = Vector2(253, 336)
+position = Vector2(76, 377)

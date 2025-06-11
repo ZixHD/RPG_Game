@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://utils/interaction/interaction_area/interaction_area.tscn" id="2_hjewq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfq5s"]
-size = Vector2(78, 72)
+size = Vector2(78, 93)
 
 [node name="Window" type="Node2D"]
 script = ExtResource("1_hjewq")
@@ -12,5 +12,5 @@ script = ExtResource("1_hjewq")
 [node name="InteractionArea" parent="." instance=ExtResource("2_hjewq")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
-position = Vector2(0, 1)
+position = Vector2(1, 14)
 shape = SubResource("RectangleShape2D_nfq5s")

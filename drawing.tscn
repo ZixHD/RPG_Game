@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://w8344owmvb6a" path="res://assets/room_child/toys/crtez1.png" id="1_syxds"]
 
 [node name="Drawing" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_syxds")

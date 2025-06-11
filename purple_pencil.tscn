@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://utils/interaction/interaction_area/interaction_area.tscn" id="1_xo7ok"]
 
 [node name="PurplePencil" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_o83r6")
