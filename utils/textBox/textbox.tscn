@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1hvvoq721i3f"]
 
-[ext_resource type="FontFile" uid="uid://2lfnexigfmkw" path="res://utils/dialog/fonts/Born2bSportyV2.ttf" id="1_gbkx0"]
-[ext_resource type="Script" uid="uid://rmic5dxu2pcn" path="res://utils/textBox/textbox.gd" id="1_ufho7"]
+[ext_resource type="FontFile" uid="uid://2lfnexigfmkw" path="res://Utils/dialog/fonts/Born2bSportyV2.ttf" id="1_gbkx0"]
+[ext_resource type="Script" uid="uid://rmic5dxu2pcn" path="res://Utils/textBox/textbox.gd" id="1_ufho7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lcmv1"]
 bg_color = Color(0.0923971, 0.0923971, 0.092397, 1)

@@ -48,7 +48,7 @@ func _update_state():
 					emit_signal("dialog_finished")
 			pass	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	_update_state()
 
 

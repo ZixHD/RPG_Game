@@ -1,7 +1,6 @@
 extends Node2D
 
 var dialog_data = {}
-var temp_file = "res://dialog/child_room.json"
 func load_dialog(filePath: String) -> void:
 	var file: FileAccess = FileAccess.open(filePath, FileAccess.READ)
 	if file:

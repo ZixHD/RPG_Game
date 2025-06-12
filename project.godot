@@ -13,14 +13,14 @@ config_version=5
 config/name="PRG_Gamge"
 run/main_scene="uid://bdon2p01tvmm1"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://assets/icon.svg"
+config/icon="res://Art/icon.svg"
 
 [autoload]
 
-InteractionManager="*res://utils/interaction/interaction_manager/InteractionManager.tscn"
-DialogManager="*res://utils/dialog/DialogManager.gd"
-SceneManager="*res://utils/scene/SceneManager.gd"
-Textbox="*res://utils/textBox/textbox.tscn"
+InteractionManager="*res://Utils/interaction/interaction_manager/InteractionManager.tscn"
+DialogManager="*res://Utils/dialog/DialogManager.gd"
+SceneManager="*res://Utils/scene/SceneManager.gd"
+Textbox="*res://Utils/textBox/textbox.tscn"
 
 [display]
 
@@ -32,6 +32,20 @@ window/stretch/scale_mode="integer"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Art/": "purple",
+"res://Objects/": "orange",
+"res://Player/": "red",
+"res://Resources/": "teal",
+"res://Scenes/": "green",
+"res://Sound/": "blue",
+"res://UI/": "red",
+"res://Utils/": "gray",
+"res://addons/": "pink"
+}
 
 [global_group]
 

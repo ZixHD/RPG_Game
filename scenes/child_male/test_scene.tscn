@@ -1,25 +1,25 @@
 [gd_scene load_steps=23 format=4 uid="uid://bdon2p01tvmm1"]
 
-[ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://scenes/child_male/player.tscn" id="1_vajy1"]
-[ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://assets/room_child/SobaDecija2.png" id="2_iun4r"]
-[ext_resource type="PackedScene" uid="uid://udlcvuvb4ve1" path="res://window.tscn" id="4_joq8n"]
-[ext_resource type="PackedScene" uid="uid://cwlre6vfkbu6y" path="res://bed.tscn" id="4_s18dl"]
-[ext_resource type="PackedScene" uid="uid://bo7dl4wm5i48b" path="res://lamp.tscn" id="5_s18dl"]
-[ext_resource type="PackedScene" uid="uid://bwi1ux40ga505" path="res://desk.tscn" id="6_wyer0"]
-[ext_resource type="PackedScene" uid="uid://c3365tiesg0cm" path="res://carpet.tscn" id="7_6ehrp"]
-[ext_resource type="PackedScene" uid="uid://coshexf7y828c" path="res://cupboard_shelfs.tscn" id="8_t1fpc"]
-[ext_resource type="PackedScene" uid="uid://1fy13wl18xkr" path="res://cupboard_clothes.tscn" id="9_t1fpc"]
-[ext_resource type="PackedScene" uid="uid://71ee8lks0u3t" path="res://car.tscn" id="10_dmxy6"]
-[ext_resource type="PackedScene" uid="uid://18pta1fi3uc7" path="res://trash_can.tscn" id="10_ltvg2"]
-[ext_resource type="PackedScene" uid="uid://dyeu3pdvj0crk" path="res://toy_chest.tscn" id="11_138r6"]
-[ext_resource type="PackedScene" uid="uid://bcwy6jkhej4jd" path="res://red_pencil.tscn" id="11_haob2"]
-[ext_resource type="PackedScene" uid="uid://dpjyan68v73uf" path="res://purple_pencil.tscn" id="12_eikv1"]
-[ext_resource type="PackedScene" uid="uid://bodhf1l2sekto" path="res://blue_pencil.tscn" id="13_7gaoq"]
-[ext_resource type="PackedScene" uid="uid://buvt1fdiqnfyn" path="res://green_pencil.tscn" id="14_ltvg2"]
-[ext_resource type="PackedScene" uid="uid://hn117kfwdqqf" path="res://yellow_pencil.tscn" id="15_138r6"]
-[ext_resource type="PackedScene" uid="uid://bbh2vx4tmggjg" path="res://drawing.tscn" id="16_100eh"]
-[ext_resource type="PackedScene" uid="uid://37wodve28fyf" path="res://action_figure.tscn" id="17_43keb"]
-[ext_resource type="PackedScene" uid="uid://cvdo35eghlrdv" path="res://teddy_bear.tscn" id="18_buv2r"]
+[ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://Scenes/child_male/player.tscn" id="1_vajy1"]
+[ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://Art/room_child/SobaDecija2.png" id="2_iun4r"]
+[ext_resource type="PackedScene" uid="uid://udlcvuvb4ve1" path="res://Objects/ChildRoom/Furniture/Window/window.tscn" id="4_joq8n"]
+[ext_resource type="PackedScene" uid="uid://cwlre6vfkbu6y" path="res://Objects/ChildRoom/Furniture/Bed/bed.tscn" id="4_s18dl"]
+[ext_resource type="PackedScene" uid="uid://bo7dl4wm5i48b" path="res://Objects/ChildRoom/Furniture/Lamp/lamp.tscn" id="5_s18dl"]
+[ext_resource type="PackedScene" uid="uid://bwi1ux40ga505" path="res://Objects/ChildRoom/Furniture/Desk/desk.tscn" id="6_wyer0"]
+[ext_resource type="PackedScene" uid="uid://c3365tiesg0cm" path="res://Objects/ChildRoom/Furniture/Carpet/carpet.tscn" id="7_6ehrp"]
+[ext_resource type="PackedScene" uid="uid://coshexf7y828c" path="res://Objects/ChildRoom/Furniture/CupboardShelfs/cupboard_shelfs.tscn" id="8_t1fpc"]
+[ext_resource type="PackedScene" uid="uid://1fy13wl18xkr" path="res://Objects/ChildRoom/Furniture/CupboardClothes/cupboard_clothes.tscn" id="9_t1fpc"]
+[ext_resource type="PackedScene" uid="uid://71ee8lks0u3t" path="res://Objects/ChildRoom/Toys/Car/car.tscn" id="10_dmxy6"]
+[ext_resource type="PackedScene" uid="uid://18pta1fi3uc7" path="res://Objects/ChildRoom/Furniture/TrashCan/trash_can.tscn" id="10_ltvg2"]
+[ext_resource type="PackedScene" uid="uid://dyeu3pdvj0crk" path="res://Objects/ChildRoom/Furniture/ToyChest/toy_chest.tscn" id="11_138r6"]
+[ext_resource type="PackedScene" uid="uid://bcwy6jkhej4jd" path="res://Objects/ChildRoom/Toys/Pencils/RedPencil/red_pencil.tscn" id="11_haob2"]
+[ext_resource type="PackedScene" uid="uid://dpjyan68v73uf" path="res://Objects/ChildRoom/Toys/Pencils/PurplePencil/purple_pencil.tscn" id="12_eikv1"]
+[ext_resource type="PackedScene" uid="uid://bodhf1l2sekto" path="res://Objects/ChildRoom/Toys/Pencils/BluePencil/blue_pencil.tscn" id="13_7gaoq"]
+[ext_resource type="PackedScene" uid="uid://buvt1fdiqnfyn" path="res://Objects/ChildRoom/Toys/Pencils/GreenPencil/green_pencil.tscn" id="14_ltvg2"]
+[ext_resource type="PackedScene" uid="uid://hn117kfwdqqf" path="res://Objects/ChildRoom/Toys/Pencils/YellowPencil/yellow_pencil.tscn" id="15_138r6"]
+[ext_resource type="PackedScene" uid="uid://bbh2vx4tmggjg" path="res://Objects/ChildRoom/Toys/Drawing/drawing.tscn" id="16_100eh"]
+[ext_resource type="PackedScene" uid="uid://37wodve28fyf" path="res://Objects/ChildRoom/Toys/ActionFigure/action_figure.tscn" id="17_43keb"]
+[ext_resource type="PackedScene" uid="uid://cvdo35eghlrdv" path="res://Objects/ChildRoom/Toys/TeddyBear/teddy_bear.tscn" id="18_buv2r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joq8n"]
 texture = ExtResource("2_iun4r")
@@ -369,74 +369,74 @@ sources/1 = SubResource("TileSetAtlasSource_joq8n")
 [node name="ChildRoom" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-position = Vector2(299, 248)
+position = Vector2(290, 255)
 scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAD3//n/AQAAAAEAAAD3//r/AQAAAAIAAAD3//v/AQAAAAMAAAD3//z/AQAAAAQAAAD3//3/AQAAAAUAAAD3//7/AQAAAAYAAAD3////AQAAAAcAAAD3/wAAAQAAAAgAAAD3/wEAAQAAAAkAAAD3/wIAAQAAAAoAAAD3/wMAAQAAAAsAAAD3/wQAAQAAAAwAAAD3/wUAAQAAAA0AAAD4//n/AQABAAEAAAD4//r/AQABAAIAAAD4//v/AQABAAMAAAD4//z/AQABAAQAAAD4//3/AQABAAUAAAD4//7/AQABAAYAAAD4////AQABAAcAAAD4/wAAAQABAAgAAAD4/wEAAQABAAkAAAD4/wIAAQABAAoAAAD4/wMAAQABAAsAAAD4/wQAAQABAAwAAAD4/wUAAQABAA0AAAD5//n/AQACAAEAAAD5//r/AQACAAIAAAD5//v/AQACAAMAAAD5//z/AQACAAQAAAD5//3/AQACAAUAAAD5//7/AQACAAYAAAD5////AQACAAcAAAD5/wAAAQACAAgAAAD5/wEAAQACAAkAAAD5/wIAAQACAAoAAAD5/wMAAQACAAsAAAD5/wQAAQACAAwAAAD5/wUAAQACAA0AAAD6//n/AQADAAEAAAD6//r/AQADAAIAAAD6//v/AQADAAMAAAD6//z/AQADAAQAAAD6//3/AQADAAUAAAD6//7/AQADAAYAAAD6////AQADAAcAAAD6/wAAAQADAAgAAAD6/wEAAQADAAkAAAD6/wIAAQADAAoAAAD6/wMAAQADAAsAAAD6/wQAAQADAAwAAAD6/wUAAQADAA0AAAD7//n/AQAEAAEAAAD7//r/AQAEAAIAAAD7//v/AQAEAAMAAAD7//z/AQAEAAQAAAD7//3/AQAEAAUAAAD7//7/AQAEAAYAAAD7////AQAEAAcAAAD7/wAAAQAEAAgAAAD7/wEAAQAEAAkAAAD7/wIAAQAEAAoAAAD7/wMAAQAEAAsAAAD7/wQAAQAEAAwAAAD7/wUAAQAEAA0AAAD8//n/AQAFAAEAAAD8//r/AQAFAAIAAAD8//v/AQAFAAMAAAD8//z/AQAFAAQAAAD8//3/AQAFAAUAAAD8//7/AQAFAAYAAAD8////AQAFAAcAAAD8/wAAAQAFAAgAAAD8/wEAAQAFAAkAAAD8/wIAAQAFAAoAAAD8/wMAAQAFAAsAAAD8/wQAAQAFAAwAAAD8/wUAAQAFAA0AAAD9//n/AQAGAAEAAAD9//r/AQAGAAIAAAD9//v/AQAGAAMAAAD9//z/AQAGAAQAAAD9//3/AQAGAAUAAAD9//7/AQAGAAYAAAD9////AQAGAAcAAAD9/wAAAQAGAAgAAAD9/wEAAQAGAAkAAAD9/wIAAQAGAAoAAAD9/wMAAQAGAAsAAAD9/wQAAQAGAAwAAAD9/wUAAQAGAA0AAAD+//n/AQAHAAEAAAD+//r/AQAHAAIAAAD+//v/AQAHAAMAAAD+//z/AQAHAAQAAAD+//3/AQAHAAUAAAD+//7/AQAHAAYAAAD+////AQAHAAcAAAD+/wAAAQAHAAgAAAD+/wEAAQAHAAkAAAD+/wIAAQAHAAoAAAD+/wMAAQAHAAsAAAD+/wQAAQAHAAwAAAD+/wUAAQAHAA0AAAD///n/AQAIAAEAAAD///r/AQAIAAIAAAD///v/AQAIAAMAAAD///z/AQAIAAQAAAD///3/AQAIAAUAAAD///7/AQAIAAYAAAD/////AQAIAAcAAAD//wAAAQAIAAgAAAD//wEAAQAIAAkAAAD//wIAAQAIAAoAAAD//wMAAQAIAAsAAAD//wQAAQAIAAwAAAD//wUAAQAIAA0AAAAAAPn/AQAJAAEAAAAAAPr/AQAJAAIAAAAAAPv/AQAJAAMAAAAAAPz/AQAJAAQAAAAAAP3/AQAJAAUAAAAAAP7/AQAJAAYAAAAAAP//AQAJAAcAAAAAAAAAAQAJAAgAAAAAAAEAAQAJAAkAAAAAAAIAAQAJAAoAAAAAAAMAAQAJAAsAAAAAAAQAAQAJAAwAAAAAAAUAAQAJAA0AAAABAPn/AQAKAAEAAAABAPr/AQAKAAIAAAABAPv/AQAKAAMAAAABAPz/AQAKAAQAAAABAP3/AQAKAAUAAAABAP7/AQAKAAYAAAABAP//AQAKAAcAAAABAAAAAQAKAAgAAAABAAEAAQAKAAkAAAABAAIAAQAKAAoAAAABAAMAAQAKAAsAAAABAAQAAQAKAAwAAAABAAUAAQAKAA0AAAACAPn/AQALAAEAAAACAPr/AQALAAIAAAACAPv/AQALAAMAAAACAPz/AQALAAQAAAACAP3/AQALAAUAAAACAP7/AQALAAYAAAACAP//AQALAAcAAAACAAAAAQALAAgAAAACAAEAAQALAAkAAAACAAIAAQALAAoAAAACAAMAAQALAAsAAAACAAQAAQALAAwAAAACAAUAAQALAA0AAAADAPn/AQAMAAEAAAADAPr/AQAMAAIAAAADAPv/AQAMAAMAAAADAPz/AQAMAAQAAAADAP3/AQAMAAUAAAADAP7/AQAMAAYAAAADAP//AQAMAAcAAAADAAAAAQAMAAgAAAADAAEAAQAMAAkAAAADAAIAAQAMAAoAAAADAAMAAQAMAAsAAAADAAQAAQAMAAwAAAADAAUAAQAMAA0AAAAEAPn/AQANAAEAAAAEAPr/AQANAAIAAAAEAPv/AQANAAMAAAAEAPz/AQANAAQAAAAEAP3/AQANAAUAAAAEAP7/AQANAAYAAAAEAP//AQANAAcAAAAEAAAAAQANAAgAAAAEAAEAAQANAAkAAAAEAAIAAQANAAoAAAAEAAMAAQANAAsAAAAEAAQAAQANAAwAAAAEAAUAAQANAA0AAAAFAPn/AQAOAAEAAAAFAPr/AQAOAAIAAAAFAPv/AQAOAAMAAAAFAPz/AQAOAAQAAAAFAP3/AQAOAAUAAAAFAP7/AQAOAAYAAAAFAP//AQAOAAcAAAAFAAAAAQAOAAgAAAAFAAEAAQAOAAkAAAAFAAIAAQAOAAoAAAAFAAMAAQAOAAsAAAAFAAQAAQAOAAwAAAAFAAUAAQAOAA0AAAAGAPn/AQAPAAEAAAAGAPr/AQAPAAIAAAAGAPv/AQAPAAMAAAAGAPz/AQAPAAQAAAAGAP3/AQAPAAUAAAAGAP7/AQAPAAYAAAAGAP//AQAPAAcAAAAGAAAAAQAPAAgAAAAGAAEAAQAPAAkAAAAGAAIAAQAPAAoAAAAGAAMAAQAPAAsAAAAGAAQAAQAPAAwAAAAGAAUAAQAPAA0AAAAHAPn/AQAQAAEAAAAHAPr/AQAQAAIAAAAHAPv/AQAQAAMAAAAHAPz/AQAQAAQAAAAHAP3/AQAQAAUAAAAHAP7/AQAQAAYAAAAHAP//AQAQAAcAAAAHAAAAAQAQAAgAAAAHAAEAAQAQAAkAAAAHAAIAAQAQAAoAAAAHAAMAAQAQAAsAAAAHAAQAAQAQAAwAAAAHAAUAAQAQAA0AAAAIAPn/AQARAAEAAAAIAPr/AQARAAIAAAAIAPv/AQARAAMAAAAIAPz/AQARAAQAAAAIAP3/AQARAAUAAAAIAP7/AQARAAYAAAAIAP//AQARAAcAAAAIAAAAAQARAAgAAAAIAAEAAQARAAkAAAAIAAIAAQARAAoAAAAIAAMAAQARAAsAAAAIAAQAAQARAAwAAAAIAAUAAQARAA0AAAAJAPn/AQASAAEAAAAJAPr/AQASAAIAAAAJAPv/AQASAAMAAAAJAPz/AQASAAQAAAAJAP3/AQASAAUAAAAJAP7/AQASAAYAAAAJAP//AQASAAcAAAAJAAAAAQASAAgAAAAJAAEAAQASAAkAAAAJAAIAAQASAAoAAAAJAAMAAQASAAsAAAAJAAQAAQASAAwAAAAJAAUAAQASAA0AAAAKAPn/AQATAAEAAAAKAPr/AQATAAIAAAAKAPv/AQATAAMAAAAKAPz/AQATAAQAAAAKAP3/AQATAAUAAAAKAP7/AQATAAYAAAAKAP//AQATAAcAAAAKAAAAAQATAAgAAAAKAAEAAQATAAkAAAAKAAIAAQATAAoAAAAKAAMAAQATAAsAAAAKAAQAAQATAAwAAAAKAAUAAQATAA0AAAD3//j/AQAAAAAAAAD4//j/AQABAAAAAAD5//j/AQACAAAAAAD6//j/AQADAAAAAAD7//j/AQAEAAAAAAD8//j/AQAFAAAAAAD9//j/AQAGAAAAAAD+//j/AQAHAAAAAAD///j/AQAIAAAAAAAAAPj/AQAJAAAAAAABAPj/AQAKAAAAAAACAPj/AQALAAAAAAADAPj/AQAMAAAAAAAEAPj/AQANAAAAAAAFAPj/AQAOAAAAAAAGAPj/AQAPAAAAAAAHAPj/AQAQAAAAAAAIAPj/AQARAAAAAAAJAPj/AQASAAAAAAAKAPj/AQATAAAAAAA=")
 tile_set = SubResource("TileSet_joq8n")
 
 [node name="Player" parent="." instance=ExtResource("1_vajy1")]
 z_index = 20
-position = Vector2(315, 271)
+position = Vector2(306, 278)
 
 [node name="Furniture" type="Node" parent="."]
 
 [node name="Window1" parent="Furniture" instance=ExtResource("4_joq8n")]
-position = Vector2(183, 72)
+position = Vector2(174, 79)
 scale = Vector2(1.39887, 1.72683)
 
 [node name="Window2" parent="Furniture" instance=ExtResource("4_joq8n")]
-position = Vector2(485, 71)
+position = Vector2(476, 78)
 scale = Vector2(1.32186, 1.68207)
 
 [node name="Bed" parent="Furniture" instance=ExtResource("4_s18dl")]
-position = Vector2(82, 204)
+position = Vector2(73, 211)
 
 [node name="Desk" parent="Furniture" instance=ExtResource("6_wyer0")]
-position = Vector2(151, 173)
+position = Vector2(142, 180)
 
 [node name="Lamp" parent="Furniture" instance=ExtResource("5_s18dl")]
-position = Vector2(151, 159)
+position = Vector2(142, 166)
 
 [node name="Carpet" parent="Furniture" instance=ExtResource("7_6ehrp")]
-position = Vector2(349, 298)
+position = Vector2(340, 305)
 
 [node name="CupboardShelfs" parent="Furniture" instance=ExtResource("8_t1fpc")]
-position = Vector2(300, 113)
+position = Vector2(291, 120)
 
 [node name="CupboardClothes" parent="Furniture" instance=ExtResource("9_t1fpc")]
-position = Vector2(567, 242)
+position = Vector2(558, 249)
 
 [node name="TrashCan" parent="Furniture" instance=ExtResource("10_ltvg2")]
-position = Vector2(602, 420)
+position = Vector2(594, 409)
 
 [node name="ToyChest" parent="Furniture" instance=ExtResource("11_138r6")]
-position = Vector2(388, 162)
+position = Vector2(379, 169)
 
 [node name="Toys" type="Node" parent="."]
 
 [node name="Car" parent="Toys" instance=ExtResource("10_dmxy6")]
-position = Vector2(145, 386)
+position = Vector2(120, 388)
 
 [node name="RedPencil" parent="Toys" instance=ExtResource("11_haob2")]
-position = Vector2(273, 303)
+position = Vector2(264, 310)
 
 [node name="PurplePencil" parent="Toys" instance=ExtResource("12_eikv1")]
-position = Vector2(291, 281)
+position = Vector2(282, 288)
 
 [node name="BluePencil" parent="Toys" instance=ExtResource("13_7gaoq")]
-position = Vector2(290, 334)
+position = Vector2(281, 341)
 
 [node name="GreenPencil" parent="Toys" instance=ExtResource("14_ltvg2")]
-position = Vector2(343, 296)
+position = Vector2(334, 303)
 
 [node name="YellowPencil" parent="Toys" instance=ExtResource("15_138r6")]
-position = Vector2(343, 325)
+position = Vector2(334, 332)
 
 [node name="Drawing" parent="Toys" instance=ExtResource("16_100eh")]
-position = Vector2(315, 319)
+position = Vector2(306, 326)
 
 [node name="ActionFigure" parent="Toys" instance=ExtResource("17_43keb")]
-position = Vector2(95, 422)
+position = Vector2(80, 413)
 
 [node name="TeddyBear" parent="Toys" instance=ExtResource("18_buv2r")]
-position = Vector2(76, 377)
+position = Vector2(63, 365)
