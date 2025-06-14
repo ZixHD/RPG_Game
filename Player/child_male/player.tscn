@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://bhhsgfpiopoku"]
 
-[ext_resource type="Script" uid="uid://ujeioffxge1g" path="res://Player/player.gd" id="1_sai44"]
-[ext_resource type="Texture2D" uid="uid://cbdfa783dfw4s" path="res://Scenes/child_male/kid male anims.png" id="2_sai44"]
+[ext_resource type="Script" uid="uid://ujeioffxge1g" path="res://Player/child_male/player.gd" id="1_sai44"]
+[ext_resource type="Texture2D" uid="uid://cbdfa783dfw4s" path="res://Player/child_male/kid male anims.png" id="2_sai44"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3n6ls"]
 radius = 10.6875
@@ -174,7 +174,7 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_sai44")
 hframes = 7
 vframes = 6
-frame = 9
+frame = 4
 metadata/_aseprite_wizard_interface_config_ = {
 "pending_changes": {}
 }

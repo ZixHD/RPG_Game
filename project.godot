@@ -20,7 +20,9 @@ config/icon="res://Art/icon.svg"
 InteractionManager="*res://Utils/interaction/interaction_manager/InteractionManager.tscn"
 DialogManager="*res://Utils/dialog/DialogManager.gd"
 SceneManager="*res://Utils/scene/SceneManager.gd"
-Textbox="*res://Utils/textBox/textbox.tscn"
+Textbox="*res://UI/textbox/textbox.tscn"
+TransitionScreen="*res://Utils/transition/transition_screen.tscn"
+NavigationManager="*res://Utils/navigation/navigation_manager.gd"
 
 [display]
 
@@ -38,7 +40,7 @@ enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 folder_colors={
 "res://Art/": "purple",
 "res://Objects/": "orange",
-"res://Player/": "red",
+"res://Player/": "yellow",
 "res://Resources/": "teal",
 "res://Scenes/": "green",
 "res://Sound/": "blue",
