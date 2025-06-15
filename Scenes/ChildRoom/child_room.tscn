@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=4 uid="uid://bdon2p01tvmm1"]
 
-[ext_resource type="Script" uid="uid://buy2j7fio0kpj" path="res://Scenes/ChildRoom/child_room.gd" id="1_1p7cm"]
+[ext_resource type="Script" uid="uid://buy2j7fio0kpj" path="res://scenes/ChildRoom/child_room.gd" id="1_1p7cm"]
 [ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://Art/room_child/SobaDecija2.png" id="1_fqjbs"]
 [ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://Player/child_male/player.tscn" id="2_4nr80"]
 [ext_resource type="PackedScene" uid="uid://udlcvuvb4ve1" path="res://Objects/ChildRoom/Furniture/Window/window.tscn" id="3_1p7cm"]
@@ -21,8 +21,8 @@
 [ext_resource type="PackedScene" uid="uid://bbh2vx4tmggjg" path="res://Objects/ChildRoom/Toys/Drawing/drawing.tscn" id="18_snptr"]
 [ext_resource type="PackedScene" uid="uid://37wodve28fyf" path="res://Objects/ChildRoom/Toys/ActionFigure/action_figure.tscn" id="19_3sxnw"]
 [ext_resource type="PackedScene" uid="uid://cvdo35eghlrdv" path="res://Objects/ChildRoom/Toys/TeddyBear/teddy_bear.tscn" id="20_uto4q"]
-[ext_resource type="PackedScene" uid="uid://duubfbdbw3nbf" path="res://Utils/loading/loading_zone.tscn" id="22_xv1xy"]
-[ext_resource type="PackedScene" uid="uid://dxga01sdtfqty" path="res://Utils/transition/transition_screen.tscn" id="23_xv1xy"]
+[ext_resource type="PackedScene" uid="uid://duubfbdbw3nbf" path="res://utils/loading/loading_zone.tscn" id="22_xv1xy"]
+[ext_resource type="PackedScene" uid="uid://dxga01sdtfqty" path="res://utils/transition/transition_screen.tscn" id="23_xv1xy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joq8n"]
 texture = ExtResource("1_fqjbs")
@@ -352,25 +352,25 @@ position = Vector2(476, 78)
 scale = Vector2(1.32186, 1.68207)
 
 [node name="Bed" parent="Furniture" instance=ExtResource("4_xv1xy")]
-position = Vector2(73, 211)
+position = Vector2(79, 198)
 
 [node name="Desk" parent="Furniture" instance=ExtResource("5_efwsb")]
-position = Vector2(142, 180)
+position = Vector2(149, 172)
 
 [node name="Lamp" parent="Furniture" instance=ExtResource("6_78p1u")]
-position = Vector2(142, 166)
+position = Vector2(148, 146)
 
 [node name="Carpet" parent="Furniture" instance=ExtResource("7_1labu")]
-position = Vector2(340, 305)
+position = Vector2(325, 279)
 
 [node name="CupboardShelfs" parent="Furniture" instance=ExtResource("8_kwgom")]
 position = Vector2(291, 120)
 
 [node name="CupboardClothes" parent="Furniture" instance=ExtResource("9_hyges")]
-position = Vector2(558, 249)
+position = Vector2(559, 179)
 
 [node name="TrashCan" parent="Furniture" instance=ExtResource("10_aiccm")]
-position = Vector2(594, 409)
+position = Vector2(60, 339)
 
 [node name="ToyChest" parent="Furniture" instance=ExtResource("11_adrqj")]
 position = Vector2(379, 169)
@@ -378,31 +378,31 @@ position = Vector2(379, 169)
 [node name="Toys" type="Node" parent="."]
 
 [node name="Car" parent="Toys" instance=ExtResource("12_e0d0y")]
-position = Vector2(120, 388)
+position = Vector2(103, 269)
 
 [node name="RedPencil" parent="Toys" instance=ExtResource("13_smfap")]
-position = Vector2(264, 310)
+position = Vector2(243, 276)
 
 [node name="PurplePencil" parent="Toys" instance=ExtResource("14_0dio7")]
-position = Vector2(282, 288)
+position = Vector2(248, 243)
 
 [node name="BluePencil" parent="Toys" instance=ExtResource("15_8mhhf")]
-position = Vector2(281, 341)
+position = Vector2(243, 286)
 
 [node name="GreenPencil" parent="Toys" instance=ExtResource("16_bfqnk")]
-position = Vector2(334, 303)
+position = Vector2(297, 239)
 
 [node name="YellowPencil" parent="Toys" instance=ExtResource("17_n7cl7")]
-position = Vector2(334, 332)
+position = Vector2(280, 282)
 
 [node name="Drawing" parent="Toys" instance=ExtResource("18_snptr")]
-position = Vector2(306, 326)
+position = Vector2(271, 267)
 
 [node name="ActionFigure" parent="Toys" instance=ExtResource("19_3sxnw")]
-position = Vector2(80, 413)
+position = Vector2(83, 297)
 
 [node name="TeddyBear" parent="Toys" instance=ExtResource("20_uto4q")]
-position = Vector2(63, 365)
+position = Vector2(61, 260)
 
 [node name="LoadingZone" parent="." instance=ExtResource("22_xv1xy")]
 
