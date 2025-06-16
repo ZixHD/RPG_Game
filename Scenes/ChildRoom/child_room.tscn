@@ -352,13 +352,13 @@ position = Vector2(476, 78)
 scale = Vector2(1.32186, 1.68207)
 
 [node name="Bed" parent="Furniture" instance=ExtResource("4_xv1xy")]
-position = Vector2(79, 198)
+position = Vector2(78, 189)
 
 [node name="Desk" parent="Furniture" instance=ExtResource("5_efwsb")]
-position = Vector2(149, 172)
+position = Vector2(146, 162)
 
 [node name="Lamp" parent="Furniture" instance=ExtResource("6_78p1u")]
-position = Vector2(148, 146)
+position = Vector2(145, 136)
 
 [node name="Carpet" parent="Furniture" instance=ExtResource("7_1labu")]
 position = Vector2(325, 279)
@@ -370,7 +370,7 @@ position = Vector2(291, 120)
 position = Vector2(559, 179)
 
 [node name="TrashCan" parent="Furniture" instance=ExtResource("10_aiccm")]
-position = Vector2(60, 339)
+position = Vector2(593, 342)
 
 [node name="ToyChest" parent="Furniture" instance=ExtResource("11_adrqj")]
 position = Vector2(379, 169)
