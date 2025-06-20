@@ -4,12 +4,13 @@ extends CanvasLayer
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 signal on_transition_finished
-
+signal on_pause
 func _ready() -> void:
 	color_rect.visible = true;
 	animation_player.animation_finished.connect(_on_animation_finished)
 	
 func transition_to_scene():
+	on_pause.emit()
 	color_rect.visible = true
 	animation_player.play("fade_to_black")
 	

@@ -1,24 +1,27 @@
 extends CharacterBody2D
 
+class_name Player
+
 @onready var animation: AnimationPlayer = $AnimationPlayer
-
-
 @export var speed: float = 150.0
-enum state {IDLE_RIGHT, IDLE_LEFT, IDLE_UP, IDLE_DOWN, WALK_RIGHT, WALK_LEFT, WALK_UP, WALK_DOWN, READING}
+
+enum state {IDLE_RIGHT, IDLE_LEFT, IDLE_UP, IDLE_DOWN, WALK_RIGHT, WALK_LEFT, WALK_UP, WALK_DOWN, PAUSED}
 var player_state = state.IDLE_RIGHT
 var input: Vector2 = Vector2.ZERO
 var last_state_before_reading: state = state.IDLE_RIGHT;
 
 func _ready() -> void:
-	Textbox.dialog_started.connect(_on_dialog_started)
-	Textbox.dialog_finished.connect(_on_dialog_finished)
+	TransitionScreen.on_pause.connect(_on_pause_started)
+	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
+	Textbox.dialog_started.connect(_on_pause_started)
+	Textbox.dialog_finished.connect(_on_pause_finished)
 	
 func update_animation() -> void:
 	match(player_state):
 		state.IDLE_RIGHT:
-			animation.play("idle R")
+			animation.play("idle right")
 		state.IDLE_LEFT:
-			animation.play("idle L")
+			animation.play("idle left")
 		state.IDLE_UP:
 			animation.play("idle back")
 		state.IDLE_DOWN:
@@ -35,7 +38,7 @@ func update_animation() -> void:
 		state.WALK_DOWN:
 			animation.play("front walk")
 			player_state = state.IDLE_DOWN
-		state.READING:
+		state.PAUSED:
 			_readingAnimations(last_state_before_reading)
 			velocity = Vector2.ZERO  
 			
@@ -44,17 +47,17 @@ func _readingAnimations(last_state: state):
 
 	match(last_state):
 		state.IDLE_RIGHT:
-			animation.play("idle R")
+			animation.play("idle right")
 		state.IDLE_LEFT:
-			animation.play("idle L")
+			animation.play("idle left")
 		state.IDLE_UP:
 			animation.play("idle back")
 		state.IDLE_DOWN:
 			animation.play("idle front")
 		state.WALK_RIGHT:
-			animation.play("idle R")
+			animation.play("idle right")
 		state.WALK_LEFT:
-			animation.play("idle L")
+			animation.play("idle left")
 		state.WALK_UP:
 			animation.play("idle back")
 		state.WALK_DOWN:
@@ -63,7 +66,7 @@ func _readingAnimations(last_state: state):
 	
 	
 func _process(delta: float) -> void:
-	if(player_state != state.READING):
+	if(player_state != state.PAUSED):
 		movement(delta)
 	
 
@@ -86,11 +89,24 @@ func movement(_delta:float) -> void:
 	move_and_slide()
 	update_animation()
 	
-func _on_dialog_started():
-
+func _on_pause_started():
 	last_state_before_reading = player_state
-	player_state = state.READING 
+	player_state = state.PAUSED 
 	update_animation()
 
-func _on_dialog_finished():
+func _on_pause_finished():
 	player_state = last_state_before_reading;
+
+func _on_spawn(position: Vector2, direction: String):
+	global_position = position
+	match(direction):
+		"up":
+			player_state = state.IDLE_UP
+		"down":
+			player_state = state.IDLE_DOWN
+		"left":
+			player_state = state.IDLE_LEFT
+		"right":
+			player_state = state.IDLE_RIGHT
+			
+			

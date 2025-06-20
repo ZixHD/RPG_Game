@@ -1,6 +1,6 @@
-[gd_scene load_steps=27 format=4 uid="uid://bdon2p01tvmm1"]
+[gd_scene load_steps=26 format=4 uid="uid://bdon2p01tvmm1"]
 
-[ext_resource type="Script" uid="uid://buy2j7fio0kpj" path="res://scenes/ChildRoom/child_room.gd" id="1_1p7cm"]
+[ext_resource type="Script" uid="uid://buy2j7fio0kpj" path="res://Scenes/ChildRoom/child_room.gd" id="1_1p7cm"]
 [ext_resource type="Texture2D" uid="uid://7xt54guw3g2d" path="res://Art/room_child/SobaDecija2.png" id="1_fqjbs"]
 [ext_resource type="PackedScene" uid="uid://bhhsgfpiopoku" path="res://Player/child_male/player.tscn" id="2_4nr80"]
 [ext_resource type="PackedScene" uid="uid://udlcvuvb4ve1" path="res://Objects/ChildRoom/Furniture/Window/window.tscn" id="3_1p7cm"]
@@ -21,8 +21,8 @@
 [ext_resource type="PackedScene" uid="uid://bbh2vx4tmggjg" path="res://Objects/ChildRoom/Toys/Drawing/drawing.tscn" id="18_snptr"]
 [ext_resource type="PackedScene" uid="uid://37wodve28fyf" path="res://Objects/ChildRoom/Toys/ActionFigure/action_figure.tscn" id="19_3sxnw"]
 [ext_resource type="PackedScene" uid="uid://cvdo35eghlrdv" path="res://Objects/ChildRoom/Toys/TeddyBear/teddy_bear.tscn" id="20_uto4q"]
-[ext_resource type="PackedScene" uid="uid://duubfbdbw3nbf" path="res://utils/loading/loading_zone.tscn" id="22_xv1xy"]
-[ext_resource type="PackedScene" uid="uid://dxga01sdtfqty" path="res://utils/transition/transition_screen.tscn" id="23_xv1xy"]
+[ext_resource type="PackedScene" uid="uid://duubfbdbw3nbf" path="res://Utils/loading/loading_zone.tscn" id="22_xv1xy"]
+[ext_resource type="PackedScene" uid="uid://dxga01sdtfqty" path="res://Utils/transition/transition_screen.tscn" id="23_xv1xy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joq8n"]
 texture = ExtResource("1_fqjbs")
@@ -325,9 +325,6 @@ texture = ExtResource("1_fqjbs")
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_joq8n")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_efwsb"]
-size = Vector2(87, 17)
-
 [node name="ChildRoom" type="Node"]
 script = ExtResource("1_1p7cm")
 
@@ -404,15 +401,20 @@ position = Vector2(83, 297)
 [node name="TeddyBear" parent="Toys" instance=ExtResource("20_uto4q")]
 position = Vector2(61, 260)
 
-[node name="LoadingZone" parent="." instance=ExtResource("22_xv1xy")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LoadingZone"]
-position = Vector2(532, 375)
-shape = SubResource("RectangleShape2D_efwsb")
-
-[node name="PlayerPosition" type="Marker2D" parent="."]
-position = Vector2(493, 327)
-
 [node name="TransitionScreen" parent="." instance=ExtResource("23_xv1xy")]
 
-[connection signal="body_entered" from="LoadingZone" to="." method="_on_loading_zone_body_entered"]
+[node name="Doors" type="Node" parent="."]
+
+[node name="Door_hallway" parent="Doors" instance=ExtResource("22_xv1xy")]
+position = Vector2(529, 380)
+destination_door_tag = "hallway"
+destination_level_tag = "child_room"
+spawn_direction = null
+
+[node name="CollisionShape2D" parent="Doors/Door_hallway" index="0"]
+position = Vector2(0, 1)
+
+[node name="Spawn" parent="Doors/Door_hallway" index="1"]
+position = Vector2(-2, -42)
+
+[editable path="Doors/Door_hallway"]

@@ -1,18 +1,16 @@
 extends Node
 
-@onready var player_spawn: Marker2D = $PlayerSpawn
 @onready var player: CharacterBody2D = $Player
-@onready var loading_zone: LoadingZone = $LoadingZone
 
-const ROOM_NAME = "hallway"
-const DESTINATION_NAME = "child_room"
+
+
 
 func _ready() -> void:
 	player.visible = true;
-	player.global_position = player_spawn.global_position
+	if NavigationManager.spawn_door_tag != null:
+		_on_level_spawn(NavigationManager.spawn_door_tag)
 	
-
-func _on_loading_zone_body_entered(body: Node2D) -> void:
-	
-	loading_zone.load_zone.call(ROOM_NAME, DESTINATION_NAME)
-	pass 
+func _on_level_spawn(destination_tag: String):
+	var door_path = "Doors/Door_" + destination_tag;
+	var door = get_node(door_path) as Door
+	NavigationManager.trigger_player_spawn(door.get_node("Spawn").global_position, door.spawn_direction)
