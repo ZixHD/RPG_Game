@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://2lfnexigfmkw"
-path="res://.godot/imported/Born2bSportyV2.ttf-25619b75bbfefe1cd6e6c18f3676a7f1.fontdata"
+uid="uid://b2haoqdcklnjl"
+path="res://.godot/imported/Drawing Sandwich.ttf-f576ea59cd02a7a07c28d8f4179a4f98.fontdata"
 
 [deps]
 
-source_file="res://utils/dialog/fonts/Born2bSportyV2.ttf"
-dest_files=["res://.godot/imported/Born2bSportyV2.ttf-25619b75bbfefe1cd6e6c18f3676a7f1.fontdata"]
+source_file="res://Art/textbox/Drawing Sandwich.ttf"
+dest_files=["res://.godot/imported/Drawing Sandwich.ttf-f576ea59cd02a7a07c28d8f4179a4f98.fontdata"]
 
 [params]
 
