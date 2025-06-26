@@ -29,6 +29,7 @@ func _update_state():
 	match current_state:
 		State.READY:
 			if !text_queue.is_empty():
+				print("test: ", text_queue)
 				display_text()
 				emit_signal("dialog_started")
 			pass
@@ -70,6 +71,7 @@ func show_textbox():
 	image_container.show()
 	
 func display_text():
+	
 	var next_text = text_queue.pop_front()
 	label.text = next_text
 	change_state(State.READING)

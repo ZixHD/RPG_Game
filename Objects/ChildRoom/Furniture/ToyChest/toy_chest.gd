@@ -14,7 +14,7 @@ func _on_dialog_finished():
 	can_add_text = true
 
 func _on_interact():
-	var text: String = DialogManager.get_message("bed");
+	var text: Array[Dictionary] = DialogManager.get_message("bed");
 	print(text)
 	if(can_add_text):
 		Textbox.queue_text(text)

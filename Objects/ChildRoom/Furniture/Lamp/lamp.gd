@@ -16,10 +16,15 @@ func _on_dialog_finished():
 	can_add_text = true
 	
 func _on_interact():
-	var text: String = DialogManager.get_message("lamp");
+	var text: Array[Dictionary] = DialogManager.get_message("lamp");
+	print("txt", text)
 	print(text)
 	if(can_add_text):
-		Textbox.queue_text(text)
+		if lamp_on:
+			Textbox.queue_text(text[1])
+			Textbox.queue_text(text[2])
+		else:
+			Textbox.queue_text(text[0])
 		
 	lamp_on = !lamp_on
 	sprite_2d.frame = lamp_on

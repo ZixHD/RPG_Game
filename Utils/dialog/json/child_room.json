@@ -1,17 +1,34 @@
 {
-	"window": [
-		"It's a beatiful day outside"
-	],
-	
-	"bed":[
-		"It's too early go to sleep",
-	],
-	
-	"lamp":[
-		"Turn it on ?"
-	],
-	
-	"desk":[
-		"The desk is a little bit wobbly"
-	],
+  "window": [
+	{
+	  "type": "text",
+	  "text": "It's a beautiful day outside."
+	}
+  ],
+
+  "bed": [
+	{
+	  "type": "text",
+	  "text": "It's too early to go to sleep."
+	}
+  ],
+
+  "lamp": [
+	{
+	  "type": "choice",
+	  "text": "What do you want to do with the lamp?",
+	  "choices": ["Turn it on", "Turn it off"]
+	},
+	{
+	  "type": "text",
+	  "text": "It's already turned on."
+	}
+  ],
+
+  "desk": [
+	{
+	  "type": "text",
+	  "text": "The desk is a little bit wobbly."
+	}
+  ]
 }
