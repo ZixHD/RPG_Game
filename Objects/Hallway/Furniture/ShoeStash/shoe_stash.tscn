@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk7vmosdp7ksd"]
+
+[ext_resource type="Texture2D" uid="uid://cxvptgrd4crhg" path="res://Art/hallway/shoe_stash.png" id="1_qc38k"]
+[ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://Utils/interaction/interaction_area/interaction_area.tscn" id="2_ahmaw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qc38k"]
+size = Vector2(126, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ahmaw"]
+size = Vector2(146, 61)
+
+[node name="ShoeStash" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_qc38k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -9.5)
+shape = SubResource("RectangleShape2D_qc38k")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_ahmaw")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("RectangleShape2D_ahmaw")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpk4uf85i0q84"]
+
+[ext_resource type="Texture2D" uid="uid://cbc7brgl4d8io" path="res://Art/hallway/umbrella.png" id="1_2frad"]
+[ext_resource type="PackedScene" uid="uid://ln0u1gs5g330" path="res://Utils/interaction/interaction_area/interaction_area.tscn" id="2_pfx7r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5oxby"]
+
+[node name="Umbrella" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2frad")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_pfx7r")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_5oxby")

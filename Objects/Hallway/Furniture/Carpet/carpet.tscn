@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://0rc2bqdf4c8o"]
+
+[ext_resource type="Texture2D" uid="uid://bkd0e61140b6h" path="res://Art/hallway/carpet_hallway.png" id="1_pfhxq"]
+
+[node name="Carpet" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.675, 1.83333)
+texture = ExtResource("1_pfhxq")

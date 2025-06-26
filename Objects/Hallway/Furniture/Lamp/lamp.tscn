@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://beubk3tf8sgyp"]
+
+[ext_resource type="Texture2D" uid="uid://bip86eel8l8mm" path="res://Art/hallway/lamp_hallway.png" id="1_4l1wc"]
+
+[node name="Lamp" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_4l1wc")
